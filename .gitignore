@@ -1,0 +1,34 @@
+# OSX
+#
+.DS_Store
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Este (DEPRECATED - remove after refactor to NextJs)
+build/
+.firebaserc
+bundle-stats.json
+firebase-debug.log
+firebase/rules.json
+src/common/config.json
+src/native/initialState.js
+webpack-assets.json
+xcuserdata
+
+# NextJs
+.next/
+
+# misc
+.tern-port
+GPATH
+GRTAGS
+GTAGS
+TAGS
+.projectile
+
+# Credentials
+# src/server/paypal-credentials.js
