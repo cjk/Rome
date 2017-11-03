@@ -1,12 +1,25 @@
 module.exports = {
   parser: 'babel-eslint',
-  parserOptions: { ecmaVersion: 6 },
   env: {
     browser: true,
     node: true,
+    es6: true,
   },
-  extends: ['airbnb', 'plugin:flowtype/recommended'],
-  plugins: ['flowtype'],
+  extends: [
+    'airbnb',
+    // It removes global Flow types so we don’t have to.
+    'plugin:flowtype/recommended',
+    'prettier',
+    'prettier/flowtype',
+    'prettier/react',
+  ],
+  plugins: ['flowtype', 'react', 'prettier'],
+  parserOptions: {
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
   globals: {
     APP_NAME: true,
     APP_VERSION: true,
