@@ -36,6 +36,8 @@
     "redux-logger": "^3.0.1",
     "redux-observable": "0.17.0",
     "rxjs": "^5.4.2",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.75.1",
     "shortid": "^2.2.8",
     "supports-color": "^5.0.0"
   },
