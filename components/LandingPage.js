@@ -20,16 +20,16 @@ const FixedMenu = () => (
       <Menu.Item as="a" active>
         Home
       </Menu.Item>
-      <Menu.Item as="a">Work</Menu.Item>
-      <Menu.Item as="a">Company</Menu.Item>
-      <Menu.Item as="a">Careers</Menu.Item>
+      <Menu.Item as="a">Leistungen</Menu.Item>
+      <Menu.Item as="a">Philosophie</Menu.Item>
+      <Menu.Item as="a">Akademie</Menu.Item>
       <Menu.Menu position="right">
         <Menu.Item className="item">
-          <Button as="a">Log in</Button>
+          <Button as="a">Anmelden</Button>
         </Menu.Item>
         <Menu.Item>
           <Button as="a" primary>
-            Sign Up
+            Registrieren
           </Button>
         </Menu.Item>
       </Menu.Menu>
@@ -66,15 +66,15 @@ export default class LandingPage extends Component {
                 <Menu.Item as="a" active>
                   Home
                 </Menu.Item>
-                <Menu.Item as="a">Work</Menu.Item>
-                <Menu.Item as="a">Company</Menu.Item>
-                <Menu.Item as="a">Careers</Menu.Item>
+                <Menu.Item as="a">Leistungen</Menu.Item>
+                <Menu.Item as="a">Philosophie</Menu.Item>
+                <Menu.Item as="a">Akademie</Menu.Item>
                 <Menu.Item position="right">
                   <Button as="a" inverted>
-                    Log in
+                    Anmelden
                   </Button>
                   <Button as="a" inverted style={{ marginLeft: '0.5em' }}>
-                    Sign Up
+                    Registrieren
                   </Button>
                 </Menu.Item>
               </Menu>
@@ -83,7 +83,7 @@ export default class LandingPage extends Component {
             <Container text>
               <Header
                 as="h1"
-                content="Imagine-a-Company"
+                content="Fischer Consulting & Training"
                 inverted
                 style={{
                   fontSize: '4em',
@@ -94,14 +94,14 @@ export default class LandingPage extends Component {
               />
               <Header
                 as="h2"
-                content="Do whatever you want when you want to."
+                content="Schnelle Unterstützung in schwierigen Situationen - egal wo sie sich gerade befinden."
                 inverted
                 style={{ fontSize: '1.7em', fontWeight: 'normal' }}
               />
               <Link href="/entry">
                 <a>
                   <Button primary size="huge">
-                    Get help
+                    Jetzt anfordern!
                     <Icon name="right arrow" />
                   </Button>
                 </a>
@@ -115,19 +115,11 @@ export default class LandingPage extends Component {
             <Grid.Row>
               <Grid.Column width={8}>
                 <Header as="h3" style={{ fontSize: '2em' }}>
-                  We Help Companies and Companions
+                  Wir machen Veränderungen möglich, denn wir finden Lösungen
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
-                  We can give your company superpowers to do things that they
-                  never thought possible. Let us delight your customers and
-                  empower your needs... through pure data analytics.
-                </p>
-                <Header as="h3" style={{ fontSize: '2em' }}>
-                  We Make Bananas That Can Dance
-                </Header>
-                <p style={{ fontSize: '1.33em' }}>
-                  Yes that's right, you thought it was the stuff of dreams, but
-                  even bananas can be bioengineered.
+                  Sie sollen die Zusammenarbeit in ihrer Organisation
+                  verbessern?
                 </p>
               </Grid.Column>
               <Grid.Column floated="right" width={6}>
@@ -135,13 +127,13 @@ export default class LandingPage extends Component {
                   bordered
                   rounded
                   size="large"
-                  src="/assets/images/wireframe/white-image.png"
+                  src="/static/images/fischer-team.jpg"
                 />
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>
               <Grid.Column textAlign="center">
-                <Button size="huge">Check Them Out</Button>
+                <Button size="huge">Mehr erfahren</Button>
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -152,19 +144,25 @@ export default class LandingPage extends Component {
             <Grid.Row textAlign="center">
               <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
                 <Header as="h3" style={{ fontSize: '2em' }}>
-                  "What a Company"
+                  Unsere Philosophie
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
-                  That is what they all say about us
+                  Manchmal ist man in seinen Überlegungen gefangen und dreht die
+                  immer gleichen Schleifen. Man zerbricht sich den Kopf, aber
+                  eine funktionierende Lösung taucht nicht auf. Das passiert
+                  Einzelnen, das passiert Teams, das betrifft ganze
+                  Organisationen.
                 </p>
               </Grid.Column>
               <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
                 <Header as="h3" style={{ fontSize: '2em' }}>
-                  "I shouldn't have gone with their competitor."
+                  "Uns bewegt was Menschen bewegt - daher sind wir immer auf der
+                  Suche nach Antworten zu Themen, die unsere Kunden
+                  beschäftigen."
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
-                  <Image avatar src="/assets/images/avatar/large/nan.jpg" />
-                  <b>Nan</b> Chief Fun Officer Acme Toys
+                  <Image avatar src="/static/images/fischer-logo.jpg" />
+                  <b>Bernhard Fischer</b> Geschäftsführer
                 </p>
               </Grid.Column>
             </Grid.Row>
@@ -174,38 +172,16 @@ export default class LandingPage extends Component {
         <Segment style={{ padding: '8em 0em' }} vertical>
           <Container text>
             <Header as="h3" style={{ fontSize: '2em' }}>
-              Breaking The Grid, Grabs Your Attention
+              FISCHER Akademie
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              Instead of focusing on content creation and hard work, we have
-              learned how to master the art of doing nothing by providing
-              massive amounts of whitespace and generic content that can seem
-              massive, monolithic and worth your attention.
+              Zusätzlich zu unseren bewährten Inhouse-Veranstaltungen gründeten
+              wir 2009 die FISCHER Akademie. Wir wollten, dass Führungskräfte
+              und Mitarbeiter auch als Einzelteilnehmer von unseren
+              Veranstaltungen profitieren können.
             </p>
             <Button as="a" size="large">
               Read More
-            </Button>
-
-            <Divider
-              as="h4"
-              className="header"
-              horizontal
-              style={{ margin: '3em 0em', textTransform: 'uppercase' }}
-            >
-              <a href="#">Case Studies</a>
-            </Divider>
-
-            <Header as="h3" style={{ fontSize: '2em' }}>
-              Did We Tell You About Our Bananas?
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              Yes I know you probably disregarded the earlier boasts as
-              non-sequitur filler content, but its really true. It took years of
-              gene splicing and combinatory DNA research, but our bananas can
-              really dance.
-            </p>
-            <Button as="a" size="large">
-              I'm Still Quite Interested
             </Button>
           </Container>
         </Segment>
@@ -215,30 +191,32 @@ export default class LandingPage extends Component {
             <Grid divided inverted stackable>
               <Grid.Row>
                 <Grid.Column width={3}>
-                  <Header inverted as="h4" content="About" />
+                  <Header inverted as="h4" content="Über uns" />
                   <List link inverted>
                     <List.Item as="a">Sitemap</List.Item>
-                    <List.Item as="a">Contact Us</List.Item>
-                    <List.Item as="a">Religious Ceremonies</List.Item>
-                    <List.Item as="a">Gazebo Plans</List.Item>
+                    <List.Item as="a">Kontakt</List.Item>
+                    <List.Item as="a">Referenzen</List.Item>
+                    <List.Item as="a">Akademie</List.Item>
                   </List>
                 </Grid.Column>
                 <Grid.Column width={3}>
-                  <Header inverted as="h4" content="Services" />
+                  <Header inverted as="h4" content="Leistungen" />
                   <List link inverted>
-                    <List.Item as="a">Banana Pre-Order</List.Item>
-                    <List.Item as="a">DNA FAQ</List.Item>
-                    <List.Item as="a">How To Access</List.Item>
-                    <List.Item as="a">Favorite X-Men</List.Item>
+                    <List.Item as="a">Management-Beratung</List.Item>
+                    <List.Item as="a">Inhouse Seminare</List.Item>
+                    <List.Item as="a">Outdoor Training</List.Item>
+                    <List.Item as="a">Service-Lösungen</List.Item>
                   </List>
                 </Grid.Column>
                 <Grid.Column width={7}>
                   <Header as="h4" inverted>
-                    Footer Header
+                    Warum mit uns?
                   </Header>
                   <p>
-                    Extra space for a call to action inside the footer that
-                    could help re-engage users.
+                    Wir bringen Sie in kurzer Zeit zu besseren Lösungen, indem
+                    wir alle Ihre Fragestellungen durch unsere unterschiedlichen
+                    Betrachtungs- weisen, Ausbildungen, Perspektiven und
+                    Charaktere abdecken.
                   </p>
                 </Grid.Column>
               </Grid.Row>
