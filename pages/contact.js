@@ -9,6 +9,8 @@ import withRedux from 'next-redux-wrapper';
 import { compose } from 'ramda';
 
 import Layout from '../components/Layout';
+import Rating from '../components/Rating';
+
 import {
   Container,
   Feed,
@@ -136,6 +138,11 @@ const EntryPage = props => (
           </Feed.Content>
         </Feed.Event>
       </Feed>
+    </Container>
+
+    <Container text style={{ marginTop: '3em' }}>
+      <Header as="h3">Ihre Bewertung zu diesem Gespräch</Header>
+      <Rating />
     </Container>
   </Layout>
 );
