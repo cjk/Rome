@@ -6,21 +6,15 @@ import { bindActionCreators } from 'redux';
 import createStore from '../lib/create-store';
 import withRedux from 'next-redux-wrapper';
 
-import Head from 'next/head';
+import Layout from '../components/Layout';
 import LandingPage from '../components/LandingPage';
 
 import { compose } from 'ramda';
 
 const IndexPage = props => (
-  <div className="app">
-    <Head>
-      <link rel="stylesheet" href="/static/semantic.min.css" />
-    </Head>
-
-    <div id="app">
-      <LandingPage />
-    </div>
-  </div>
+  <Layout title="Ebene 1">
+    <LandingPage />
+  </Layout>
 );
 
 const mapDispatchToProps = dispatch => {

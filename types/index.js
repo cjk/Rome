@@ -8,8 +8,15 @@ import type {
 
 import type { Observable } from 'rxjs';
 
+type Navigation = {
+  level1: Object,
+};
+
 // TODO: App-state
-export type State = {};
+export type State = {
+  navigation: Navigation,
+  prefs: Object,
+};
 export type Dependencies = {};
 
 // Actions

@@ -6,21 +6,48 @@ import { bindActionCreators } from 'redux';
 import createStore from '../lib/create-store';
 import withRedux from 'next-redux-wrapper';
 
-import Head from 'next/head';
-import Level1 from '../components/Level1';
-
 import { compose } from 'ramda';
 
-const EntryPage = props => (
-  <div className="app">
-    <Head>
-      <link rel="stylesheet" href="/static/semantic.min.css" />
-    </Head>
+import Layout from '../components/Layout';
+import LevelLink from '../components/LevelLink';
 
-    <div id="app">
-      <Level1 />
+import { Grid, Header, Segment } from 'semantic-ui-react';
+
+const style = {
+  h2: {
+    marginTop: '2em',
+    padding: '2em 0em',
+  },
+};
+
+const EntryPage = props => (
+  <Layout title="Ebene 1">
+    <div>
+      <Header
+        as="h2"
+        content="Wo können wir helfen...?"
+        style={style.h2}
+        textAlign="center"
+      />
+      <Grid container columns={3} stackable>
+        <Grid.Column>
+          <LevelLink href="/level2">
+            <Segment padded="very">Führung</Segment>
+          </LevelLink>
+        </Grid.Column>
+        <Grid.Column>
+          <Segment padded="very" disabled>
+            Projektmanagemant
+          </Segment>
+        </Grid.Column>
+        <Grid.Column>
+          <Segment padded="very" disabled>
+            Kundengespräche
+          </Segment>
+        </Grid.Column>
+      </Grid>
     </div>
-  </div>
+  </Layout>
 );
 
 const mapDispatchToProps = dispatch => {
